@@ -1,6 +1,6 @@
 import React from 'react'
 import { HERO_CONTENT } from '../data';
-import intro from "../intro.webp";
+import intro from "../intro.png";
 
 
 const Hero = () => {

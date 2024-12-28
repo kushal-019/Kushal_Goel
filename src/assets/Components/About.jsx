@@ -1,6 +1,6 @@
 import React from 'react'
 import { ABOUT_TEXT } from '../data'
-import aboutimage from "../aboutimage.webp"
+import aboutimage from "../aboutimage.png"
 
 const About = () => {
     return (
