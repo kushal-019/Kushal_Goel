@@ -1,5 +1,5 @@
-import React from 'react'
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import React from 'react';
+import { FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
 import { TbBrandLeetcode } from "react-icons/tb";
 import { SiGeeksforgeeks } from "react-icons/si";
 
@@ -10,7 +10,8 @@ const Navbar = () => {
                 <p className="mx-2 size-18">KG</p>
             </div>
             <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
-
+                
+                {/* Social Media Links */}
                 <a href="https://www.linkedin.com/in/kushal-goel-b8a578270/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin />
                 </a>
@@ -25,10 +26,7 @@ const Navbar = () => {
                 </a>
             </div>
         </nav>
-
-
-
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;

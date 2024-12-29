@@ -2,6 +2,7 @@ import project1 from "./Project1.webp";
 import project2 from "./Project2.jpg";
 import project3 from "./Project3.jpeg";
 import project4 from "./Project4.jpeg";
+import project5 from "./Project5.png";
 
 export const HERO_CONTENT = `I am a passionate MERN stack developer with a focus on building efficient and dynamic web applications. As a student with 2 years of hands-on experience, I have developed strong skills in front-end technologies like React.js and Redux, as well as back-end technologies like Node.js, Express.js, and MongoDB. My goal is to utilize my expertise in RESTful APIs and full stack development to create impactful solutions that enhance user experiences and solve real-world problems.`;
 
@@ -9,34 +10,22 @@ export const HERO_CONTENT = `I am a passionate MERN stack developer with a focus
 export const ABOUT_TEXT = `I am a dedicated MERN stack developer with 2 years of experience in creating innovative and user-friendly web applications. As a student, I have honed my skills in technologies like React.js, Redux, Node.js, Express.js, and MongoDB. My passion for web development began with a curiosity for problem-solving, which has grown into a commitment to building scalable and maintainable solutions. I enjoy working on RESTful APIs, collaborating with teams, and staying up-to-date with emerging technologies. Outside of coding, I explore new tools, enhance my knowledge, and participate in learning opportunities to continuously improve my craft.`;
 
 
-export const EXPERIENCES = [
+export const SERVICES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    role: "Web Development",
+    description: `Proficient in building full-stack web applications using modern frameworks and libraries like React.js, Node.js, and Express.js.`,
+    technologies: ["Javascript", "React.js", "Node.js", "mongoDB"],
+
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    role: "Database Design and Management",
+    description: `Design and optimize scalable relational and non-relational databases, ensuring performance and reliability for applications.`,
+    technologies: ["mongoDB" , "mySQL"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    role: "Algorithm Development and Optimization",
+    description: `Design and implement efficient algorithms to solve complex problems, reduce processing time, and optimize system performance.`,
+    technologies: ["CPP" ,"C" , "Java" ],
   },
 ];
 
@@ -72,6 +61,14 @@ export const PROJECTS = [
       "Welcome to Chefs Pencil, a web application where users can discover, share, and contribute to an extensive collection of recipes. Whether you're a seasoned chef or a beginner, Chefs Pencil helps you explore exciting new dishes and easily filter them based on your preferences.",
     technologies: ["HTML", "CSS", "JavaScript"],
     url:"https://kushal-019.github.io/Chefs-Pencil",
+  },
+  {
+    title: "Google Gemini",
+    image: project5,
+    description:
+      "This project is a React-based user interface for interacting with the Google Gemini API, utilizing the Generative AI SDK. The application allows users to input prompts and receive generative responses from the Gemini model.",
+    technologies: [ "JavaScript","React.js", "Redux", "Tailwind.CSS"],
+    url:"https://gemini-2-0-three.vercel.app",
   },
   
 ];

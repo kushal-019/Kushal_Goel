@@ -1,7 +1,7 @@
 import './App.css'
 import About from './assets/Components/About'
 import Contact from './assets/Components/Contact'
-import Experience from './assets/Components/Experience'
+import Services from './assets/Components/Services'
 import Hero from './assets/Components/Hero'
 import Navbar from './assets/Components/Navbar'
 import Project from './assets/Components/Project'
@@ -21,7 +21,7 @@ function App() {
         <Hero/>
         <About/>
         <TechStacks/>
-        {/* <Experience/> */}
+        <Services/>
         <Project/>
         <Contact/>
       </div>
