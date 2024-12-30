@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { SERVICES } from '../data';
+import { SERVICES } from '../assets/data';
 
 const Services = () => {
     const containerVariants = {
@@ -14,7 +14,7 @@ const Services = () => {
     };
 
     const serviceVariants = {
-        hidden: { 
+        hidden: {
             opacity: 0,
             x: -50
         },
@@ -30,7 +30,7 @@ const Services = () => {
     };
 
     const tagVariants = {
-        hidden: { 
+        hidden: {
             opacity: 0,
             scale: 0.8
         },
@@ -44,18 +44,18 @@ const Services = () => {
     };
 
     return (
-        <motion.div 
+        <motion.div
             className="border-b pb-24 border-neutral-800"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={containerVariants}
         >
-            <motion.h1 
+            <motion.h1
                 className="my-20 text-center text-4xl"
                 initial={{ opacity: 0, y: -20 }}
-                whileInView={{ 
-                    opacity: 1, 
+                whileInView={{
+                    opacity: 1,
                     y: 0,
                     transition: { duration: 0.6 }
                 }}
@@ -65,25 +65,25 @@ const Services = () => {
             </motion.h1>
             <div>
                 {SERVICES.map((services, index) => (
-                    <motion.div 
-                        key={index} 
+                    <motion.div
+                        key={index}
                         className="mb-8 flex flex-wrap lg:justify-center text-left"
                         variants={serviceVariants}
                     >
-                        <motion.div 
+                        <motion.div
                             className="w-full max-w-xl lg:w-3/4"
-                            whileHover={{ 
+                            whileHover={{
                                 scale: 1.02,
                                 transition: { duration: 0.2 }
                             }}
                         >
-                            <motion.h2 
+                            <motion.h2
                                 className='mb-2 font-bold'
                                 variants={serviceVariants}
                             >
                                 {services.role}
                             </motion.h2>
-                            <motion.p 
+                            <motion.p
                                 className='mb-4 text-neutral-400'
                                 variants={serviceVariants}
                             >
@@ -94,11 +94,11 @@ const Services = () => {
                                 className="flex flex-wrap gap-2"
                             >
                                 {services.technologies.map((service, index) => (
-                                    <motion.span 
+                                    <motion.span
                                         key={index}
                                         className='rounded bg-purple-950 px-2 py-1 text-sm font-medium text-white-500'
                                         variants={tagVariants}
-                                        whileHover={{ 
+                                        whileHover={{
                                             scale: 1.1,
                                             backgroundColor: "#581c87",
                                             transition: { duration: 0.2 }

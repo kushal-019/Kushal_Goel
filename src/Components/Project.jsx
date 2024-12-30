@@ -1,14 +1,15 @@
 import React, { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
-import { PROJECTS } from "../data";
+import { PROJECTS } from "../assets/data";
+
 
 const Project = () => {
     const sectionRef = useRef(null);
-    const isInView = useInView(sectionRef, { 
+    const isInView = useInView(sectionRef, {
         once: true,
         margin: "-100px"
     });
-    
+
     const { scrollYProgress } = useScroll({
         target: sectionRef,
         offset: ["start end", "end start"]
@@ -29,23 +30,23 @@ const Project = () => {
     };
 
     const projectVariants = {
-        hidden: { 
-            opacity: 0, 
+        hidden: {
+            opacity: 0,
             y: 100,
             scale: 0.9
         },
-        visible: { 
-            opacity: 1, 
-            y: 0, 
+        visible: {
+            opacity: 1,
+            y: 0,
             scale: 1,
-            transition: { 
+            transition: {
                 duration: 0.7,
                 ease: [0.25, 0.1, 0.25, 1]
-            } 
+            }
         },
-        hover: { 
+        hover: {
             scale: 1.03,
-            transition: { 
+            transition: {
                 duration: 0.4,
                 ease: [0.25, 0.1, 0.25, 1]
             }
@@ -53,24 +54,24 @@ const Project = () => {
     };
 
     const imageVariants = {
-        hidden: { 
+        hidden: {
             opacity: 0,
             scale: 0.8,
             filter: "blur(10px)"
         },
-        visible: { 
+        visible: {
             opacity: 1,
             scale: 1,
             filter: "blur(0px)",
-            transition: { 
+            transition: {
                 duration: 0.5,
                 ease: "easeOut"
             }
         },
-        hover: { 
+        hover: {
             scale: 1.08,
             boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1)",
-            transition: { 
+            transition: {
                 duration: 0.3,
                 ease: [0.25, 0.1, 0.25, 1]
             }
@@ -78,15 +79,15 @@ const Project = () => {
     };
 
     const buttonVariants = {
-        hover: { 
+        hover: {
             scale: 1.1,
             backgroundColor: "#7e22ce",
-            transition: { 
+            transition: {
                 duration: 0.3,
                 ease: [0.25, 0.1, 0.25, 1]
             }
         },
-        tap: { 
+        tap: {
             scale: 0.95,
             transition: {
                 duration: 0.1
@@ -95,25 +96,25 @@ const Project = () => {
     };
 
     const techVariants = {
-        hidden: { 
+        hidden: {
             opacity: 0,
             scale: 0.5,
             y: 20
         },
-        visible: (index) => ({ 
+        visible: (index) => ({
             opacity: 1,
             scale: 1,
             y: 0,
-            transition: { 
+            transition: {
                 duration: 0.4,
                 delay: index * 0.1,
                 ease: [0.25, 0.1, 0.25, 1]
             }
         }),
-        hover: { 
+        hover: {
             scale: 1.15,
             y: -5,
-            transition: { 
+            transition: {
                 duration: 0.2,
                 ease: [0.25, 0.1, 0.25, 1]
             }

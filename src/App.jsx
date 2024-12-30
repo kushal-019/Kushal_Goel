@@ -1,11 +1,11 @@
 import './App.css'
-import About from './assets/Components/About'
-import Contact from './assets/Components/Contact'
-import Services from './assets/Components/Services'
-import Hero from './assets/Components/Hero'
-import Navbar from './assets/Components/Navbar'
-import Project from './assets/Components/Project'
-import TechStacks from './assets/Components/TechStacks'
+import About from './Components/About'
+import Contact from './Components/Contact'
+import Services from './Components/Services'
+import Hero from './Components/Hero'
+import Navbar from './Components/Navbar'
+import Project from './Components/Project'
+import TechStacks from './Components/TechStacks'
 
 function App() {
 
